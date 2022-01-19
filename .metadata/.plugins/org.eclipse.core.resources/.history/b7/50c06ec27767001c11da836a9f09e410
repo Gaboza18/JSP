@@ -1,0 +1,9 @@
+package util;
+
+/*
+ *  DB 연결과 close 기능 수행  
+ */
+
+public class DBManager {
+	
+}

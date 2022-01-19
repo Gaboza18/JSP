@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;product.js&apos; to &apos;script&apos;" description="Move &apos;product.js&apos; to &apos;script&apos;" destination="src/main/webapp/script" element1="src/main/webapp/WEB-INF/product.js" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1640333366083" updateReferences="true"/>
+</session>

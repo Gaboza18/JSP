@@ -1,0 +1,7 @@
+package Class_Practice;
+
+public class StudentExample {
+	public static void main(String[] args) {
+
+	}
+}

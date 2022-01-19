@@ -1,0 +1,32 @@
+package com.green.controller.action;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.green.dao.BoardDAO;
+
+public class BoardDeleteAction implements Action {
+
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+	
+		String url = "board/boardDelete.jsp";
+
+		String num = request.getParameter("num"); // 게시글 번호를 읽어온다
+
+		BoardDAO bDao = BoardDAO.getInstance();
+		bDao.deleteBoard(num);
+		
+		
+		BoardVO board = bDao.BoardListAction();
+				
+		request.setAttribute("board", board);
+		request.getRequestDispatcher(url).forward(request, response);
+		
+		
+	}
+}

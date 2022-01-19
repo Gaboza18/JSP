@@ -1,0 +1,43 @@
+package com.green.controller;
+
+import com.green.controller.action.*;
+
+/*
+ *  command의 내용에 따라 Action 클래스를 찾아 액션 객체를 생성해 주는 클래스
+ *  싱글톤 클래스로 구현 
+ */
+
+public class ActionFactory {
+
+	private ActionFactory() { // 싱글톤 생성자
+	}
+
+	private static ActionFactory instance = new ActionFactory(); // 인스턴스 생성
+
+	public static ActionFactory getInstance() {
+		return instance;
+	}
+
+	/*
+	 * command의 내용에 따라 Action 객체 생성
+	 */
+
+	public Action getAction(String command) {
+
+		Action action = null;
+
+		System.out.println("ActionFactory: " + command);
+
+		if (command.equals("board_list")) { // 게시물 조회 
+			action = new BoardListAction();
+		} else if (command.equals("board_write_form")) { // 게시물 입력
+			action = new BoardWriteFormAction();
+		} else if (command.equals("board_write")) { // 게시물 등록
+			action = new BoardWriteAction();
+		} else if(command.equals("boarder_view")) { // 게시물 조회 및 조회수++
+			action = new BoardViewAction();
+		}
+
+		return action;
+	}
+}

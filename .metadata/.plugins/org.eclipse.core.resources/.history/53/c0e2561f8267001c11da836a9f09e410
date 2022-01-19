@@ -1,0 +1,10 @@
+package com.green.controller;
+
+/*
+ *  command의 내용에 따라 Action 클래스를 찾아 액션 객체를 생성해 주는 클래스
+ *  싱글톤 클래스로 구현 
+ */
+
+public class ActionFactory {
+
+}

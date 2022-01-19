@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;jquery-3.6.0.min.js&apos; to &apos;script&apos;&#x0D;&#x0A;- Original project: &apos;01.Servlet_Basic&apos;&#x0D;&#x0A;- Destination element: &apos;script&apos;&#x0D;&#x0A;- Original element: &apos;jquery-3.6.0.min.js&apos;" description="Copy file" element1="src/main/webapp/js/jquery-3.6.0.min.js" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1640157864036" target="/08.database-dbcp/src/main/webapp/WebContent/script" units="0" version="1.0"/>
+</session>

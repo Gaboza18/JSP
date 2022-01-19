@@ -1,0 +1,9 @@
+package Class_Practice;
+
+public class CarExample {
+	public static void main(String[] args) {
+		
+		// °´Ã¼ »ý¼º
+		Car myCar = new Car();
+	}
+}

@@ -1,0 +1,10 @@
+/**
+ * 	 게시글 입력 항목 확인
+ */
+
+function boardCheck() {
+
+	var $name = $("#name");
+	var $pass = $("#pass");
+	var $title = $("#title");
+}
